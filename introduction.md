@@ -2,7 +2,9 @@
 
 ## What is this book?
 
-This is a different kind of programming book. Most introductory programming books teach the syntax and semantics of a programming language. If they are good programming books, they also teach how to use that language’s features to best advantage, and how structure a program maintainably.
+This is a different kind of programming book.
+
+Most introductory programming books teach the syntax and semantics of a programming language. If they are good programming books, they also teach how to use that language’s features to best advantage, and how to structure a program maintainably.
 
 But what introductory programming books do not teach is _testing_. These books seldom have more than a brief mention of testing libraries, near the end of the book. Therefore, the novice programmer, if he[^1] learns about testing at all, gets the sense that it is something to be learned later, almost as an afterthought.
 
