@@ -10,6 +10,12 @@ This book is for anyone, regardless of previous programming experience. All the 
 
 This book assumes that you are using a Unix-like operating system, such as Mac OS X or Linux. If you’re using some other operating system, however, don’t let that stop you: most of the examples should work anywhere.
 
+### Ruby interpreter
+
+You’ll need a Ruby interpreter, version 2.0.0 or higher. Some operating systems (such as Mac OS X) may come with one; to check the version, type `ruby -v` at a command prompt. If you don’t have a suitable Ruby interpreter, the easiest way to install one is to use a Ruby version manager, such as [rbenv](https://github.com/sstephenson/rbenv), [RVM](http://rvm.io), or [chruby](https://github.com/postmodern/chruby). It is probably easiest to follow their instructions, rather than trying to document all of them here.
+
+If a version manager is not available for your environment, you can get a Ruby interpreter from http://www.ruby-lang.org.
+
 ### Text editor
 
 Ruby source code, like that of most other programming languages, lives in plain text files. This means that you’ll need a good text editor.
