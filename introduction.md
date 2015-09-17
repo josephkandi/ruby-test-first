@@ -18,7 +18,7 @@ This book is for anyone who wants to learn to do test-first development in Ruby.
 
 For the _novice_, this book uses a test-first development pattern to teach basic programming skills from the ground up, with testing skills right alongside them. Novices should be able to start at the beginning with no previous programming knowledge and work their way through chapter by chapter.
 
-For the _experienced programmer_, this book teaches Ruby development and testing practice. Experienced programmers may want to skim the earlier chapters and jump in where they feel like they're lacking something.
+For the _experienced programmer_, this book teaches Ruby development and testing practice. Experienced programmers may want to skim the earlier chapters and jump in where they feel like they’re lacking something.
 
 On a personal note, I should say that I hope this book will be accessible to _anyone_. As a self-taught software developer myself, I believe that anyone can learn essential programming concepts if they are taught correctly, and that everyone _should_ do so at at least a basic to intermediate level: in 2015, the ability to write simple programs is a life skill that everyone should have. It need not be mysterious, arcane, or intimidating in any way.
 
