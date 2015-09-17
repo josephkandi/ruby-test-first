@@ -1,6 +1,6 @@
 # Chapter 1: Getting Started
 
-Welcome! You are about to embark on an exciting learning experience. If you have never done any programming previously, don’t worry: this book will teach you all you need to know to write real programs with the Ruby language. If you are an experienced programmer, you will be learning test-first development in a new and different way. Either way, I think you will find something in this book that is novel, interesting, and fun!
+Welcome! You are about to embark on an exciting learning experience. If you have never done any programming previously, don’t worry: this book will teach you all you need to know to begin writing real programs with the Ruby language. If you are an experienced programmer, you will be learning test-first development in a new and different way. Either way, I think you will find something in this book that is novel, interesting, and fun!
 
 ## What you will need
 
