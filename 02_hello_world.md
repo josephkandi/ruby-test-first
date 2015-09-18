@@ -93,11 +93,11 @@ Finished in 0.048715s, 20.5275 runs/s, 20.5275 assertions/s.
 1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
 ```
 
-By default the test runner does not print any details about passing tests, but we know our test has run because we can see that dot after the word `Running`. For each passing test, the test runner will print one dot, and in the last line, we can see that while it found one _assertion_, it did not run into any failures or errors, so we know that our test finally passed.
+By default the test runner does not print any details about passing tests, but we know our test has run because we can see that dot after the word `Running`. For each passing test, the test runner will print one dot, and in the last line, we can see that while it found one assertion (see below), it did not run into any failures or errors, so we know that our test finally passed.
 
-An _assertion_ or _expectation_, in testing language, is a statement about the behavior we expect our code to have. In this case, our assertion was in the line `proc { hello }.must_output "Hello World!\n"`: we are _asserting_ that our code must have certain output in order to pass that test.
+In the terminology of testing, an _assertion_ or _expectation_ is a statement about the behavior we expect our code to have. In this case, our assertion was in the line `proc { hello }.must_output "Hello World!\n"`: we are _asserting_ that our code must have certain output in order to pass that test.
 
-## Recap
+## Summary
 
 In this chapter, we introduced the basic test-first workflow:
 1. Write a small test
