@@ -16,9 +16,9 @@ Before you continue, make sure that your current directory at the command line i
 
 Since we are doing test-first development, we will start by writing a test (or in this case, a _spec_—more on that terminology in the next chapter). Create a file in the current `ch02` directory called `hello_spec.rb` with the following contents:
 
-```ruby
+<pre><code class='lang-ruby'>
 {% include "git+https://github.com/marnen/ruby-test-first-code.git/ch02/hello_spec.rb#02-hello-world-1" %}
-```
+</code></pre>
 
 Even if you don’t yet know Ruby, you can probably guess that this means: when I run the code `{ hello }`, I want the output `Hello World!`. (We’ll explain the syntax in detail shortly.)
 
@@ -43,9 +43,9 @@ In this case, the error is simple: ```undefined local variable or method `hello'
 
 To define `hello`, we will start creating the code that actually implements the program itself, as opposed to the tests. Create a new file called `hello.rb` with the following contents:
 
-```ruby
+<pre><code class='lang-ruby'>
 {% include "git+https://github.com/marnen/ruby-test-first-code.git/ch02/hello.rb#02-hello-world-2" %}
-```
+</code></pre>
 
 This defines `hello`, but does not have it do anything in particular.
 
@@ -75,9 +75,9 @@ Just as with our previous test, the output from this failing test has told us wh
 
 Modify the `hello.rb` file so it looks like this:
 
-```ruby
+<pre><code class='lang-ruby'>
 {% include "git+https://github.com/marnen/ruby-test-first-code.git/ch02/hello.rb#02-hello-world-3" %}
-```
+</code></pre>
 
 Run the test again. This time, you won’t see any annoying failure messages, but simply the following:
 
