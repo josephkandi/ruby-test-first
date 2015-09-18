@@ -97,6 +97,10 @@ By default the test runner does not print any details about passing tests, but w
 
 In the terminology of testing, an _assertion_ or _expectation_ is a statement about the behavior we expect our code to have. In this case, our assertion was in the line `proc { hello }.must_output "Hello World!\n"`: we are _asserting_ that our code must have certain output in order to pass that test.
 
+## Run the code
+
+Now that the tests have passed, let’s run the program ourselves! Type `ruby -r ./hello -e 'hello'` to do this.[^1] Sure enough, you’ll see the output `Hello World!`—our program works just as the tests told us it would!
+
 ## Summary
 
 In this chapter, we introduced the basic test-first workflow:
@@ -105,3 +109,5 @@ In this chapter, we introduced the basic test-first workflow:
 3. Based on the failure, write just enough code to make the test pass
 
 Writing a “Hello World” program in this way is admittedly overkill, but it serves as an introduction to the rhythm of test-first development. In the following chapters, we will expand on this notion of the test-first workflow, and we will use it to explain the Ruby language, as well as some more abstract notions of software engineering.
+
+[^1] The `-r` command-line option loads (or _requires_) the specified file; it is equivalent to the `require './hello'` that we put in `hello_spec.rb`. The `-e` option treats the following string as a Ruby program, so that we are calling the `hello` function that we defined in `hello.rb`. Don’t worry too much about these options now: although they are helpful for getting up and running quickly, we shall see in the following chapters how to automate execution more efficiently.
