@@ -12,7 +12,7 @@ This book assumes that you are using a Unix-like operating system, such as Mac O
 
 ### Ruby interpreter
 
-You’ll need a Ruby interpreter, version 2.0.0 or higher. Some operating systems (such as Mac OS X) may come with one; to check the version, type `ruby -v` at a command prompt. If you don’t have a suitable Ruby interpreter, the easiest way to install one is to use a Ruby version manager, such as [rbenv](https://github.com/sstephenson/rbenv), [RVM](http://rvm.io), or [chruby](https://github.com/postmodern/chruby). It is probably easiest to follow their instructions, rather than trying to document all of them here.
+You’ll need a Ruby interpreter, version 2.0.0 or higher (2.2.3 is current as I write this). Some operating systems (such as Mac OS X) may come with one; to check the version, type `ruby -v` at a command prompt. If you don’t have a suitable Ruby interpreter, the easiest way to install one is to use a Ruby version manager, such as [rbenv](https://github.com/sstephenson/rbenv), [RVM](http://rvm.io), or [chruby](https://github.com/postmodern/chruby). It is probably easiest to follow their instructions, rather than trying to document all of them here.
 
 If a version manager is not available for your environment, you can get a Ruby interpreter from http://www.ruby-lang.org.
 
