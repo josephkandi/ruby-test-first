@@ -24,6 +24,12 @@ If you’re an experienced programmer, you probably already have a text editor y
 
 If you’re a novice programmer, and you don’t already have a text editor you like, now is the time to play around with some and pick one! Your operating system probably came with a simple text editor (such as TextEdit on Mac OS X), and that will work, but a more sophisticated editor with features aimed at programmers will probably be helpful. If you want to work in a console environment, you can use a console editor such as [Emacs](https://www.gnu.org/software/emacs/) or [Vim](http://www.vim.org); however, I prefer to use a good graphical editor. My current favorite is [Atom](http://atom.io), which was developed by the good folks at [GitHub](http://github.com); other popular choices (not necessarily free, though) include [SublimeText](http://www.sublimetext.com/) and [TextMate](https://macromates.com/). Avoid using a word processor (such as [Microsoft Word](https://products.office.com/en-us/word) or [LibreOffice](http://libreoffice.org)): those programs were designed for producing formatted documents, not for efficiently manipulating plain text.
 
+### Terminal emulator
+
+You will need to be comfortable with your operating system’s command line (you don’t have to be a whiz, but you should know the basics). If you’re an experienced programmer, you probably are comfortable there already; if not, many tutorials are available for those of different operating systems.
+
+To use the command line on a graphical system, you normally need to use an application known as a _terminal emulator_. Your OS almost certainly supplies one (e.g. Terminal.app on Mac OS X), but others are often available (such as [iTerm](http://www.iterm2.com), also for Mac OS X). As with text editors, they all get the job done, so pick one that has features that you like.
+
 ### Version control
 
 TODO: expand this section
