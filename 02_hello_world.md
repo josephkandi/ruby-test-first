@@ -8,7 +8,7 @@ In keeping with the spirit of this book, we will write our “Hello World” pro
 
 ## Set up a new project
 
-Create a new directory (call it `ch02` or something) to hold this chapter’s Ruby files. If you’re using a Ruby version manager, you may want to put a configuration file in this directory to tell your version manager which Ruby to use (normally this file is called `.ruby-version`, but check the documentation for details).
+Create a new directory (call it `ch02` or something) to hold this chapter’s Ruby files. If you’re using a Ruby version manager, you may want to put a configuration file in this directory to tell your version manager which Ruby to use (normally this file is called `.ruby-version`, but check your version manager’s documentation for details).
 
 Before you continue, make sure that your current directory at the command line is the `ch02` directory you just created.
 
