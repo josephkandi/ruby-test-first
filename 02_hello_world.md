@@ -153,6 +153,12 @@ We are not getting the output the test said we should (the expected output is ma
 
 Now run the test again and watch it pass!
 
+## What did we just do?
+
+Take another look at `hello_spec.rb`. Notice that our test defines a variable called `name`, then refers to `name` in the expected output. By doing this, we have asserted a _relationship_ between the input and the output: for any possible input value of `name`, we are stating that we will output a greeting with that same value of `name`. In other words, we are using test-first development to specify exactly how we want our program to transform its input into output.
+
+Making these statements about our program’s behavior is important, as it makes clear to us—and to any later maintainer of our code—exactly what the program should do. Automating these tests is equally important: it guarantees that we are running the same tests every time (except for the explicitly randomized data), and makes it possible for us to run the tests rapidly and frequently during our development cycle to make sure we haven’t broken anything.
+
 ## Run the code once more
 
 Try running the program manually: type `ruby -r ./hello -e 'hello "NAME"'`, replacing `NAME` with your own name. Sure enough, you’ll see `Hello, NAME!`, exactly as the tests promised.
