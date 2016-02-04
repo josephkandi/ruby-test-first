@@ -1,5 +1,9 @@
 {
-  "structure": {
-    "readme": "introduction.md"
-  }
+    "structure": {
+        "readme": "introduction.md"
+    },
+    "plugins": [
+        "comments"
+    ],
+    "pluginsConfig": {}
 }
