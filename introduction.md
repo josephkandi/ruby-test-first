@@ -30,7 +30,9 @@ I am grateful to Kate Fractal for pointing out that testing is best taught with 
 
 ## How can we improve this book?
 
-The source for this book is hosted on GitHub at https://github.com/marnen/ruby-test-first. If you’ve got an idea or suggestion, please raise an issue or send a pull request in that repository!
+If you are reading this book on the Web, you can leave a comment on any paragraph. Just hover over it and click the `+` button that appears.
+
+Alternatively, visit https://github.com/marnen/ruby-test-first, where the source code for this book lives. If you’ve got an idea or suggestion, please raise an issue or send a pull request in that repository!
 
 —Marnen E. Laibow-Koser, Somerville, Massachusetts, September 2015
 
