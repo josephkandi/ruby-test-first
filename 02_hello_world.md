@@ -161,7 +161,7 @@ Making these statements about our program’s behavior is important, as it makes
 
 ## Run the code once more
 
-Try running the program manually: type `ruby -r ./hello -e 'hello "NAME"'`, replacing `NAME` with your own name. Sure enough, you’ll see `Hello, NAME!`, exactly as the tests promised.
+Try running the program manually: type `ruby -r ./hello -e "hello('NAME')"`, replacing `NAME` with your own name. Sure enough, you’ll see `Hello, NAME!`, exactly as the tests promised.
 
 ## Summary
 
