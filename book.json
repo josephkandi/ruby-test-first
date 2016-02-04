@@ -3,7 +3,7 @@
         "readme": "introduction.md"
     },
     "plugins": [
-        "-comments"
+        "comments"
     ],
     "pluginsConfig": {}
 }
