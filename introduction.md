@@ -22,6 +22,12 @@ For the _experienced programmer_, this book teaches Ruby development and testing
 
 On a personal note, I should say that I hope this book will be accessible to _anyone_. As a self-taught software developer myself, I believe that anyone can learn essential programming concepts if they are taught correctly, and that everyone _should_ do so at at least a basic to intermediate level: in 2015, the ability to write simple programs is a life skill that everyone should have. It need not be mysterious, arcane, or intimidating in any way.
 
+## Acknowledgements
+
+TODO: More to come as this book grows!
+
+I am grateful to Kate Fractal for pointing out that testing is best taught with user input, and to Aldric Giacomoni for making the comment that set me on the path of writing this book in the first place. And of course many thanks are due to Yukihiro “Matz” Matsumoto for creating the Ruby language, and for making it so flexible, powerful, and testable.
+
 ## How can we improve this book?
 
 The source for this book is hosted on GitHub at https://github.com/marnen/ruby-test-first. If you’ve got an idea or suggestion, please raise an issue or send a pull request in that repository!

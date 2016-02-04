@@ -101,6 +101,68 @@ In the terminology of testing, an _assertion_ or _expectation_ is a statement ab
 
 Now that the tests have passed, let’s run the program ourselves! Type `ruby -r ./hello -e 'hello'` to do this.[^1] Sure enough, you’ll see the output `Hello World!`—our program works just as the tests told us it would!
 
+## Why are we doing this?
+
+For a program such as the one we have written, which only ever outputs one constant string, this method of development is probably overkill; one can trivially verify a program of this sort by inspecting the source code. However, test-first development becomes vitally important once we introduce _variable_ behavior: in order to ensure that our program is correct, we need to programmatically verify that we get the expected output for a given input.
+
+## Introducing variable behavior
+
+As a simple example of variable behavior, we will modify our program to accept a name to say hello to. Change `hello_spec.rb` to read as follows:
+
+<pre><code class='lang-ruby'>
+{% include "git+https://github.com/marnen/ruby-test-first-code.git/ch02/hello_spec.rb#02-hello-name-1" %}
+</code></pre>
+
+This sets `name` to a string (including a random number, so we can't simply hard-code the output), and asserts that calling the `hello` method with that name as an argument[^2] should print a personalized greeting (that is, calling `hello('Chris')` should print `Hello, Chris!`).
+
+Run the test with `ruby hello_spec.rb` as before. Of course, it will fail, with output like this:
+
+```
+1) Error:
+Hello World::hello#test_0001_prints "Hello" followed by the given name:
+ArgumentError: wrong number of arguments (1 for 0)
+  /Users/mlaibowkoser/Documents/ruby-test-first-code/ch02/hello.rb:1:in `hello'
+  hello_spec.rb:7:in `block (3 levels) in <main>'
+```
+
+Note the `wrong number of arguments (1 for 0)` message. This tells us that our `hello` method received a name to operate on, but doesn’t yet know how to operate on anything.  `hello.rb:1` tells us right where the error is—on  line 1 of `hello.rb`.
+
+We can solve this problem easily: change the first line of `hello.rb` to
+```ruby
+def hello(name)
+```
+and run the test again. This time we get a failure, not an error:
+
+```
+1) Failure:
+Hello World::hello#test_0001_prints "Hello" followed by the given name [hello_spec.rb:7]:
+In stdout.
+--- expected
++++ actual
+@@ -1,2 +1,2 @@
+-"Hello, User 3!
++"Hello World!
+"
+```
+
+We are not getting the output the test said we should (the expected output is marked with `-`, the actual output with `+`), so let's fix that. Change `hello.rb` to read as follows:
+
+<pre><code class='lang-ruby'>
+{% include "git+https://github.com/marnen/ruby-test-first-code.git/ch02/hello.rb#02-hello-name-3" %}
+</code></pre>
+
+Now run the test again and watch it pass!
+
+## What did we just do?
+
+Take another look at `hello_spec.rb`. Notice that our test defines a variable called `name`, then refers to `name` in the expected output. By doing this, we have asserted a _relationship_ between the input and the output: for any possible input value of `name`, we are stating that we will output a greeting with that same value of `name`. In other words, we are using test-first development to specify exactly how we want our program to transform its input into output.
+
+Making these statements about our program’s behavior is important, as it makes clear to us—and to any later maintainer of our code—exactly what the program should do. Automating these tests is equally important: it guarantees that we are running the same tests every time (except for the explicitly randomized data), and makes it possible for us to run the tests rapidly and frequently during our development cycle to make sure we haven’t broken anything.
+
+## Run the code once more
+
+Try running the program manually: type `ruby -r ./hello -e 'hello "NAME"'`, replacing `NAME` with your own name. Sure enough, you’ll see `Hello, NAME!`, exactly as the tests promised.
+
 ## Summary
 
 In this chapter, we introduced the basic test-first workflow:
@@ -111,3 +173,5 @@ In this chapter, we introduced the basic test-first workflow:
 Writing a “Hello World” program in this way is admittedly overkill, but it serves as an introduction to the rhythm of test-first development. In the following chapters, we will expand on this notion of the test-first workflow, and we will use it to explain the Ruby language, as well as some more abstract notions of software engineering.
 
 [^1] The `-r` command-line option loads (or _requires_) the specified file; it is equivalent to the `require './hello'` that we put in `hello_spec.rb`. The `-e` option treats the following string as a Ruby program, so that we are calling the `hello` function that we defined in `hello.rb`. Don’t worry too much about these options now: although they are helpful for getting up and running quickly, we shall see in the following chapters how to automate execution more efficiently.
+
+[^2] An _argument_ is the value that a function (or method) operates on. Don’t worry if this is unclear for now; we’ll explain it in greater depth later.
